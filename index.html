@@ -1,0 +1,790 @@
+<!-- собрано из src/html/student-fest/ · sha256:d66d23e58835eef5 — правки вносить в исходник -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Прорастая в будущее — студенческий фестиваль АЭАПП</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #F6EFE2;
+    --paper-light: #FBF7EF;
+    --card: rgba(255, 252, 246, 0.94);
+    --ink: #1C1813;
+    --muted: #433B31;
+    --faint: #6A5F51;
+    --line: rgba(110, 86, 56, 0.26);
+    --peach: #EBC3A4;
+    --terracotta: #C98C6C;
+    --sage: #9AAA84;
+    --olive: #355C3B;
+    --green-ink: #22382A;
+    --ochre: #D3A56B;
+    --ochre-deep: #8A5F2A;
+    --gold-soft: #F2DFBE;
+
+    --display: 'Fraunces', Georgia, serif;
+    --body: 'Work Sans', ui-sans-serif, system-ui, 'Helvetica Neue', sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  /* Переход по якорю останавливается под липкой навигацией; её высоту (на узком экране она в несколько строк) кладёт в --nav-h скрипт внизу */
+  html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h, 46px) + 24px); }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--paper);
+    background-image:
+      radial-gradient(ellipse 60% 40% at 0% 30%, rgba(235, 195, 164, 0.35), transparent 70%),
+      radial-gradient(ellipse 55% 35% at 100% 60%, rgba(154, 170, 132, 0.25), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 10% 95%, rgba(211, 165, 107, 0.25), transparent 70%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3 { font-family: var(--display); margin: 0; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
+
+  .wrap { max-width: 1100px; margin: 0 auto; padding-inline: clamp(16px, 5vw, 56px); }
+
+  /* ---------- Первый экран: акварельный фон, как в анонсе ---------- */
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    color: var(--green-ink);
+    padding: clamp(64px, 9vw, 96px) 0 clamp(64px, 8vw, 90px);
+  }
+  /* Акварель на отдельном слое, чтобы растворить её низ маской, не задевая текст и веточку */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    -webkit-mask-image: linear-gradient(180deg, #000 calc(100% - clamp(110px, 14vw, 160px)), transparent 100%);
+    mask-image: linear-gradient(180deg, #000 calc(100% - clamp(110px, 14vw, 160px)), transparent 100%);
+    background:
+      radial-gradient(ellipse 45% 55% at 0% 100%, rgba(201, 140, 108, 0.6), transparent 70%),
+      radial-gradient(ellipse 50% 45% at 100% 0%, rgba(235, 195, 164, 0.7), transparent 70%),
+      radial-gradient(ellipse 40% 55% at 100% 100%, rgba(211, 165, 107, 0.45), transparent 70%),
+      linear-gradient(170deg, #F8F1E4 0%, #F3E8D6 100%);
+  }
+
+  .sprig { position: absolute; pointer-events: none; }
+  .sprig-left { left: 0; bottom: clamp(40px, 6vw, 70px); width: clamp(110px, 15vw, 180px); }
+  /* Без z-index: иначе .wrap становится отдельным слоем и белый фон логотипа не растворяется в акварели */
+  .hero-sprout { position: absolute; right: -30px; top: 12px; width: clamp(220px, 34vw, 360px); }
+  .hero .wrap { position: relative; }
+
+  .kicker {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ochre-deep);
+  }
+
+  /* Первый экран — как в макете фестиваля, только на светлом акварельном фоне */
+  /* Логотип встроен в страницу, чтобы файл открывался сам по себе; белый фон картинки растворяется в акварели */
+  .logo-hero { width: 150px; height: 150px; display: block; margin: -10px 0 18px -10px; mix-blend-mode: multiply; }
+
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6E4A1E;
+  }
+  .eyebrow::before { content: "🌱"; font-size: 14px; }
+
+  .hero h1 {
+    font-size: clamp(44px, 8vw, 86px);
+    font-weight: 600;
+    line-height: 0.97;
+    letter-spacing: -0.01em;
+    color: var(--green-ink);
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 500;
+    background: linear-gradient(100deg, #3F7340, #A0741F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .lede {
+    max-width: 540px;
+    margin: 26px 0 0;
+    font-size: 19px;
+    color: #33402F;
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px clamp(40px, 6vw, 80px);
+    margin-top: 46px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(43, 66, 48, 0.2);
+  }
+  .hero-meta div { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
+  /* Лекцию Лэнгле выделяет её название — тем же курсивом, что «в будущее» в заголовке */
+  .hero-meta .label.label-accent { color: var(--ochre-deep); }
+  .hero-meta .meta-author { font-size: 17px; font-weight: 700; color: var(--green-ink); letter-spacing: 0.06em; }
+  .hero-meta .meta-title {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.15;
+    color: var(--ochre-deep);
+  }
+  @media (max-width: 640px) { .lede br { display: none; } .hero-meta { justify-content: center; } }
+  .hero-meta .label { font-family: var(--mono); font-size: 13.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--olive); }
+  .hero-meta .val { font-size: 19px; font-weight: 600; color: var(--green-ink); }
+
+  .btn {
+    display: inline-block;
+    padding: 15px 34px;
+    border-radius: 999px;
+    background: var(--olive);
+    color: #FBF7EF;
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .btn:hover { background: var(--green-ink); transform: translateY(-1px); }
+
+  .hero .btn { display: table; margin: 36px auto 0; }
+  .hero-invite { margin: clamp(40px, 6vw, 64px) 0 0; text-align: center; font-family: var(--display); font-style: italic; font-size: clamp(26px, 4vw, 34px); line-height: 1.25; color: var(--green-ink); }
+
+  .todo {
+    font-style: italic;
+    color: var(--ochre-deep);
+  }
+
+  /* ---------- Навигация ---------- */
+
+  .nav {
+    position: sticky; top: 0; z-index: 5;
+    background: rgba(246, 239, 226, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav .wrap {
+    display: flex; gap: 8px 26px; flex-wrap: wrap; justify-content: center;
+    padding-block: 12px;
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .nav a { text-decoration: none; color: var(--muted); }
+  .nav a:hover { color: var(--olive); }
+
+  /* ---------- Разделы ---------- */
+
+  section { padding: clamp(56px, 8vw, 88px) 0; }
+  .section-title { text-align: center; margin-bottom: clamp(32px, 5vw, 48px); }
+  .section-title h2 { font-size: clamp(32px, 4.6vw, 46px); font-weight: 600; color: var(--green-ink); }
+  .section-title p { margin: 14px 0 0; font-family: var(--mono); font-size: 18px; font-weight: 500; letter-spacing: 0.03em; color: var(--olive); }
+
+  .intro { max-width: 860px; margin: 0 auto; font-size: 19px; text-align: center; color: var(--muted); }
+  .intro p { margin: 0; }
+  .intro p + p { margin-top: 16px; }
+  .intro strong { color: var(--ink); }
+
+  /* Строки расписания — как у осеннего интенсива: время слева, событие справа */
+  .schedule { max-width: 960px; margin: 0 auto; }
+  .row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 8px 32px;
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+  .row:last-child { border-bottom: 1px solid var(--line); }
+  .row .time { font-family: var(--mono); font-size: 17px; font-weight: 600; color: var(--olive); padding-top: 3px; }
+  .row .what { font-family: var(--display); font-weight: 600; font-size: 22px; color: var(--green-ink); }
+  .row.pause .what { color: var(--olive); }
+  .row .note { margin-top: 4px; font-size: 16px; color: var(--muted); }
+
+  /* Параллельные залы */
+  .halls {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 14px;
+  }
+  .hall {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 20px 8px;
+  }
+  .hall-name {
+    font-family: var(--mono);
+    font-size: 13.5px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--olive);
+    margin-bottom: 8px;
+  }
+  .talk { padding: 12px 0 14px; border-top: 1px solid var(--line); }
+  .hall-name + .talk { border-top: 0; padding-top: 4px; }
+  /* Разделительные линии докладов стоят на одной высоте во всех трёх залах */
+  @media (min-width: 861px) {
+    .halls { row-gap: 0; }
+    .hall { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; }
+  }
+  .who {
+    display: block;
+    font-size: 15px; font-weight: 600;
+    color: var(--ochre-deep);
+    margin-bottom: 4px;
+  }
+  .mc .who { font-size: 17px; margin-bottom: 8px; }
+  .mc .who .mc-time { display: block; margin-bottom: 2px; font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--olive); }
+  .talk-title { font-weight: 600; font-size: 16px; line-height: 1.45; color: var(--ink); }
+  .talk-title small { display: block; margin-top: 3px; font-weight: 400; font-size: 14px; color: var(--faint); }
+
+  /* Лекция Лэнгле */
+  .keynote {
+    position: relative;
+    overflow: hidden;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 24px;
+    padding: clamp(40px, 6vw, 64px) clamp(20px, 5vw, 56px);
+    /* Та же акварель, что на первом экране, с веточкой в углу */
+    background:
+      radial-gradient(ellipse 55% 75% at 0% 100%, rgba(216, 152, 120, 0.55), transparent 70%),
+      radial-gradient(ellipse 55% 60% at 100% 0%, rgba(232, 178, 138, 0.6), transparent 70%),
+      radial-gradient(ellipse 40% 55% at 100% 100%, rgba(222, 178, 122, 0.4), transparent 70%),
+      linear-gradient(170deg, #FBF4E9 0%, #F5E8D5 100%);
+    border: 1px solid rgba(138, 95, 42, 0.4);
+  }
+  .keynote > :not(.sprig) { position: relative; }
+  .keynote-sprig use { opacity: 0.85; }
+  .keynote-sprig { left: 10px; bottom: 0; width: clamp(130px, 20vw, 230px); }
+  /* Серый фон снимка умножается на светлый тёплый градиент и теплеет, лицо остаётся в естественных цветах */
+  .keynote-photo {
+    width: 230px; height: 230px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    isolation: isolate;
+    border: 4px solid rgba(255, 252, 246, 0.85);
+    box-shadow: 0 6px 22px rgba(110, 76, 40, 0.18);
+    background: linear-gradient(145deg, #FFF3E4 0%, #F6DCC4 55%, #E4E8D2 100%);
+  }
+  .keynote-photo img {
+    display: block; width: 100%; height: 100%;
+    object-fit: cover; object-position: center 25%;
+    mix-blend-mode: multiply;
+  }
+  .keynote .kicker { display: block; font-size: 16px; font-weight: 600; color: var(--green-ink); }
+  .keynote h2 { max-width: 680px; margin: 10px auto 0; font-size: clamp(26px, 4vw, 40px); font-weight: 600; line-height: 1.15; color: var(--green-ink); }
+
+  .keynote-slot { grid-column: 1 / -1; padding-block: 8px; }
+
+  .keynote-info {
+    max-width: 960px;
+    margin: 16px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .keynote-info > div {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 26px 26px 24px;
+  }
+  .keynote-info h3 { font-size: 20px; font-weight: 600; color: var(--green-ink); margin-bottom: 10px; }
+  .keynote-sub { max-width: 560px; margin: 12px auto 0; font-size: 18px; color: var(--muted); }
+  .keynote-info p { margin: 0; font-size: 16px; color: var(--muted); }
+  .keynote-info p + p { margin-top: 10px; }
+  .keynote-info blockquote {
+    margin: 0 0 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--sage);
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--green-ink);
+  }
+  .regalia { margin: 12px 0 0; padding-left: 18px; font-size: 16px; color: var(--muted); }
+  .regalia li + li { margin-top: 8px; }
+  .regalia b { font-weight: 600; color: var(--green-ink); }
+  .regalia li::marker { color: var(--sage); }
+  /* Текст о Лэнгле начинается на той же высоте, что текст под цитатой слева */
+  @media (min-width: 761px) {
+    .keynote-info { grid-template-rows: auto auto 1fr; }
+    .keynote-info > div { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 0; }
+  }
+  @media (max-width: 760px) { .keynote-info { grid-template-columns: 1fr; } .quote-spacer { display: none; } }
+  .keynote .time { margin-top: 20px; font-family: var(--mono); font-size: 14px; color: var(--olive); }
+
+  /* Мастер-классы */
+  .mc-grid {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 14px;
+  }
+  .mc-grid.stack { grid-template-columns: 1fr; width: 100%; max-width: 720px; justify-self: center; }
+  .mc {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px 22px 24px;
+  }
+  .mc h3 { font-size: 19px; font-weight: 600; line-height: 1.3; color: var(--green-ink); }
+  .mc p { margin: 10px 0 0; font-size: 15px; color: var(--muted); }
+  .mc h3 + p.mc-sub { margin-top: 6px; }
+  .mc p.mc-sub + p { margin-top: 12px; }
+
+  /* Регистрация */
+  .register { text-align: center; }
+
+  /* Обратный отсчёт до конца ранней цены; после 31 октября скрипт снимает его */
+  .countdown {
+    max-width: 680px;
+    margin: 0 auto 44px;
+    padding: 22px 24px 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    /* Акварель первого экрана */
+    background:
+      radial-gradient(ellipse 55% 85% at 0% 100%, rgba(216, 152, 120, 0.55), transparent 70%),
+      radial-gradient(ellipse 55% 70% at 100% 0%, rgba(232, 178, 138, 0.6), transparent 70%),
+      radial-gradient(ellipse 40% 65% at 100% 100%, rgba(222, 178, 122, 0.4), transparent 70%),
+      linear-gradient(170deg, #FBF4E9 0%, #F5E8D5 100%);
+    border: 1px solid rgba(138, 95, 42, 0.4);
+  }
+  .countdown > :not(.sprig) { position: relative; }
+  .countdown-sprig { left: 4px; bottom: 0; width: 66px; opacity: 1; }
+  .countdown-sprig use { opacity: 0.85; }
+  @media (max-width: 640px) { .countdown-sprig { display: none; } }
+  .countdown-title { font-family: var(--mono); font-size: 14.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #5E3E16; }
+  .countdown-clock { display: flex; justify-content: center; gap: clamp(14px, 4vw, 36px); margin-top: 12px; }
+  .countdown-clock div { display: flex; flex-direction: column; align-items: center; min-width: 64px; }
+  .countdown-clock b { font-family: var(--display); font-size: clamp(38px, 7vw, 54px); font-weight: 600; line-height: 1; color: var(--green-ink); }
+  .countdown-clock span { margin-top: 6px; font-size: 15px; font-weight: 600; color: var(--ink); }
+  .countdown-note { margin-top: 12px; font-size: 16.5px; font-weight: 500; color: var(--ink); }
+  .is-late .countdown { display: none; }
+
+  /* Вариант участия */
+  .plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .plan-icon {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: #DCE3CE;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .plan-icon svg { width: 32px; height: 32px; }
+  .plan h3 { margin-top: 18px; font-size: 22px; font-weight: 600; color: var(--green-ink); }
+  .plan-when { margin-top: 6px; font-size: 16.5px; font-weight: 600; color: var(--olive); }
+
+  .includes { list-style: none; width: 100%; margin: 18px 0 0; padding: 0; font-size: 15px; color: var(--muted); }
+  .includes li { padding: 9px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+  .cost-label { padding-top: 22px; font-size: 14px; font-weight: 600; color: var(--ink); }
+  .cost { margin-top: 4px; display: flex; align-items: baseline; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .price-early { font-family: var(--display); font-size: 32px; font-weight: 600; color: var(--green-ink); }
+  .price-regular { font-size: 17px; color: var(--faint); }
+  .cost-hint { margin-top: 2px; font-size: 15px; font-weight: 500; color: var(--ochre-deep); }
+  .is-late .price-early, .is-late .cost-hint { display: none; }
+  .is-late .price-regular { text-decoration: none; font-family: var(--display); font-size: 32px; font-weight: 600; color: var(--green-ink); }
+
+  .plan .btn { margin-top: 22px; }
+
+  .members {
+    max-width: 640px;
+    margin: 52px auto 0;
+    padding: 26px 28px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    text-align: left;
+  }
+  .members h3 { font-size: 20px; font-weight: 600; color: var(--green-ink); }
+  .members ul { margin: 14px 0 0; padding-left: 20px; }
+  .members li s { color: var(--faint); }
+  .members .m-late { display: none; }
+  .is-late .members .m-early { display: none; }
+  .nowrap { white-space: nowrap; }
+  .is-late .members .m-late { display: inline; }
+  .members p { margin: 16px 0 0; font-size: 15px; color: var(--muted); }
+  .members a { color: var(--olive); }
+
+  footer {
+    padding: 36px 0 44px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    font-size: 14px;
+    color: var(--faint);
+  }
+  footer a { color: var(--olive); }
+
+  @media (max-width: 860px) {
+    .halls { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 1fr; gap: 4px; }
+    .row .what { font-size: 20px; }
+    .mc-grid { grid-template-columns: 1fr; }
+    .hero-sprout { opacity: 0.6; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="leaf" d="M0 0 C 10 -14, 32 -14, 44 0 C 32 14, 10 14, 0 0 Z"/>
+  </defs>
+</svg>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#about">О фестивале</a>
+    <a href="#day1">Программа</a>
+    <a href="#langle">Лекция Альфрида Лэнгле</a>
+    <a href="#register">Регистрация</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <svg class="sprig sprig-left" viewBox="0 0 200 260" aria-hidden="true">
+    <path d="M0 236 C 30 220, 60 160, 110 60" stroke="#8E7A55" stroke-width="2" fill="none" opacity="0.6"/>
+    <use href="#leaf" transform="translate(23 216) rotate(-150)" fill="#C98C6C" opacity="0.55"/>
+    <use href="#leaf" transform="translate(37 196) rotate(-20)" fill="#9AAA84" opacity="0.6"/>
+    <use href="#leaf" transform="translate(53 170) rotate(-160)" fill="#D9A07E" opacity="0.55"/>
+    <use href="#leaf" transform="translate(70 139) rotate(-30)" fill="#C98C6C" opacity="0.5"/>
+    <use href="#leaf" transform="translate(85 110) rotate(-145)" fill="#9AAA84" opacity="0.55"/>
+    <use href="#leaf" transform="translate(98 83) rotate(-45)" fill="#D9A07E" opacity="0.5"/>
+  </svg>
+  <svg class="hero-sprout" viewBox="-14 0 214 200" fill="none" aria-hidden="true">
+    <path d="M40 190 C 42 140, 30 120, 45 90 C 58 65, 50 40, 55 15" stroke="#7E9A6E" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M45 90 C 60 82, 75 85, 82 70" stroke="#7E9A6E" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M50 130 C 34 124, 22 130, 14 116" stroke="#C9A060" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M55 60 C 66 55, 72 44, 68 32" stroke="#7E9A6E" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <use href="#leaf" transform="translate(82 70) rotate(-35) scale(0.55)" fill="#9AAA84" opacity="0.75"/>
+    <use href="#leaf" transform="translate(14 116) rotate(-160) scale(0.5)" fill="#C98C6C" opacity="0.6"/>
+    <use href="#leaf" transform="translate(68 32) rotate(-60) scale(0.45)" fill="#9AAA84" opacity="0.65"/>
+    <circle cx="55" cy="15" r="7" fill="#D3A56B" opacity="0.85"/>
+  </svg>
+
+  <div class="wrap">
+    <img class="logo-hero" alt="Логотип фестиваля «Прорастая в будущее»" src="data:image/jpeg;base64,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">
+    <span class="eyebrow">Студенческий фестиваль АЭАПП</span>
+    <h1>Прорастая<br><em>в будущее</em></h1>
+    <p class="lede">День докладов и мастер-классов,<br> а также встреча с Альфридом Лэнгле —<br> для тех, кто изучает метод и<br> уже начинает в нём практиковать.</p>
+    <div class="hero-meta">
+      <div><span class="label">Онлайн</span><span class="val">21 ноября (СБ)</span><span class="val">10:00 – 19:00</span></div>
+      <div><span class="label label-accent">Лекция <b class="meta-author">Альфрида Лэнгле</b></span><span class="meta-title">«Доверять человеку»</span><span class="val">21 ноября (СБ) · 15:00 – 16:30</span></div>
+    </div>
+    <a class="btn" href="https://gle.aeapp.ru/21_11_26" target="_blank" rel="noopener">Зарегистрироваться</a>
+    <p class="hero-invite">Приглашаем на студенческий фестиваль!</p>
+  </div>
+</header>
+
+<main>
+
+  <section id="about" style="padding-top:clamp(24px, 4vw, 40px)">
+    <div class="wrap">
+      <div class="intro">
+        <p>Студенческий фестиваль открывает <strong>юбилейный год 25-летия экзистенциального анализа в России</strong>.</p>
+        <p><strong>Студенты и выпускники образовательных программ по экзистенциальному анализу</strong> поделятся результатами своих теоретических и эмпирических исследований и случаями из практики.</p>
+        <p>В программе — доклады в трёх параллельных залах, лекция Альфрида Лэнгле и онлайн-мастер-классы.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПРОГРАММА ===== -->
+  <section id="day1" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Программа</h2>
+        <p>Онлайн<br>21 ноября 2026 (суббота)<br>10:00–19:00</p>
+      </div>
+
+      <div class="schedule">
+        <div class="row"><div class="time">10:00 – 10:10</div><div><div class="what">Открытие фестиваля</div></div></div>
+
+        <div class="row">
+          <div class="time">10:10 – 11:20</div>
+          <div><div class="what">Теория и методология</div><div class="note">Три зала идут параллельно, в каждом по три доклада. Между залами можно переходить</div></div>
+          <div class="halls">
+            <div class="hall">
+              <div class="hall-name">Зал 1</div>
+              <div class="talk"><span class="who">Мария Кузнецова</span><div class="talk-title">Философские основания понятия «открытость» у Альфрида Лэнгле и Медарда Босса</div></div>
+              <div class="talk"><span class="who">Екатерина Пипина</span><div class="talk-title">4 типа пограничного личностного расстройства в работе экзистенциально-аналитического психолога</div></div>
+              <div class="talk"><span class="who">Артур Красюков</span><div class="talk-title">Диалог с квази-Другим<small>Третий тип диалога в экзистенциальном анализе</small></div></div>
+            </div>
+            <div class="hall">
+              <div class="hall-name">Зал 2</div>
+              <div class="talk"><span class="who">Анна Адамовская</span><div class="talk-title">Психологические ресурсы для совладания с ограничительной силой тревоги</div></div>
+              <div class="talk"><span class="who">Виталий Минаев</span><div class="talk-title">Проблема любви к себе в свете современного экзистенциального анализа<small>Философия, клиника и христианская антропология вокруг понятия Person-Sein</small></div></div>
+              <div class="talk"><span class="who">Юлия Лукшина</span><div class="talk-title">ЭА: между аналоговым и цифровым</div></div>
+            </div>
+            <div class="hall">
+              <div class="hall-name">Зал 3</div>
+              <div class="talk"><span class="who">Оксана Губина</span><div class="talk-title">Семейная терапия<small>Возможности использования метода Готтмана в экзистенциально-аналитической работе</small></div></div>
+              <div class="talk"><span class="who">Александр Кисельников</span><div class="talk-title">Экзистенциальная диалектика общего и отличного в любви<small>«Любить иное, которое тебя меняет»</small></div></div>
+              <div class="talk"><span class="who">Мария Осетрова</span><div class="talk-title">Структура переживания соприсутствия в процессе психотерапии</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pause"><div class="time">11:20 – 11:30</div><div><div class="what">Перерыв</div></div></div>
+
+        <div class="row">
+          <div class="time">11:30 – 12:40</div>
+          <div><div class="what">Исследования</div><div class="note">Три зала идут параллельно, в каждом по три доклада. Между залами можно переходить</div></div>
+          <div class="halls">
+            <div class="hall">
+              <div class="hall-name">Зал 1</div>
+              <div class="talk"><span class="who">Екатерина Иванова</span><div class="talk-title">Применение феноменологической установки в коучинге уверенности в управленческих решениях</div></div>
+              <div class="talk"><span class="who">Полина Аверина</span><div class="talk-title">Совладание с экзистенциальной изоляцией взрослых, переживших длительный буллинг в школе</div></div>
+              <div class="talk"><span class="who">Оксана&nbsp;Смецкая, Евлалия&nbsp;Просветова</span><div class="talk-title">Самопознание и феноменологический метод<small>Значение самопознания консультанта для феноменологического восприятия клиента</small><small>Исследовательская группа АЭАПП</small></div></div>
+            </div>
+            <div class="hall">
+              <div class="hall-name">Зал 2</div>
+              <div class="talk"><span class="who">Серафима-Агата Кай</span><div class="talk-title">Психодинамические и экзистенциальные основания творческого процесса личности</div></div>
+              <div class="talk"><span class="who">Ирина Леонова</span><div class="talk-title">Период средней взрослости у женщин<small>Экзистенциально-феноменологический анализ</small></div></div>
+              <div class="talk"><span class="who">Диля Газизова</span><div class="talk-title">Ангедония<small>Феноменология и современная нейронаука</small></div></div>
+            </div>
+            <div class="hall">
+              <div class="hall-name">Зал 3</div>
+              <div class="talk"><span class="who">Александра Павлова</span><div class="talk-title">Экзистенциальная исполненность и эмоциональная регуляция<small>Контролировать эмоции или вступать с ними в диалог?</small></div></div>
+              <div class="talk"><span class="who">Любовь Усова</span><div class="talk-title">Экзистенциально-смысловые особенности восприятия жизни и смерти у суицидальных подростков</div></div>
+              <div class="talk"><span class="who">Юлия Жданова</span><div class="talk-title">Феноменологическая установка в работе психолога-консультанта<small>Переживание, трудности и условия удержания</small></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pause"><div class="time">12:40 – 12:50</div><div><div class="what">Перерыв</div></div></div>
+
+        <div class="row">
+          <div class="time">12:50 – 14:00</div>
+          <div><div class="what">Практика</div><div class="note">Три зала идут параллельно, в каждом по три доклада. Между залами можно переходить</div></div>
+          <div class="halls">
+            <div class="hall">
+              <div class="hall-name">Зал 1</div>
+              <div class="talk"><span class="who">Марьям Гамзаева</span><div class="talk-title">Возможности феноменологического анализа сновидения об умершем близком для персональной переработки утраты</div></div>
+              <div class="talk"><span class="who">Любовь Попова</span><div class="talk-title">Отсутствие аутентичной встречи с собой как блокада воли при принятом решении<small>Описание клиентки и концептуализация случая</small></div></div>
+              <div class="talk"><span class="who">Дарья Буркова</span><div class="talk-title">Терапия биполярного аффективного расстройства в экзистенциально-аналитическом подходе<small>Обобщение международного опыта</small></div></div>
+            </div>
+            <div class="hall">
+              <div class="hall-name">Зал 2</div>
+              <div class="talk"><span class="who">Светлана Толочко</span><div class="talk-title">Опыт ведения модерированных игр с детьми младшего школьного возраста и создание предпосылок для персонального развития</div></div>
+              <div class="talk"><span class="who">Лариса Пейгина</span><div class="talk-title">«Там, наверное, вообще не надо будет умирать»<small>Анализ ресурсов фанатского творчества с точки зрения ЭА</small></div></div>
+              <div class="talk"><span class="who">Анастасия Кирова</span><div class="talk-title">Возможность сохранения персональности врача-психиатра в условиях работы в стационаре<small>Личный опыт</small></div></div>
+            </div>
+            <div class="hall">
+              <div class="hall-name">Зал 3</div>
+              <div class="talk"><span class="who">Елена Корж</span><div class="talk-title">Диалог ЭА и EMDR<small>Возможности взаимодействия в психотерапевтической практике</small></div></div>
+              <div class="talk"><span class="who">Татьяна Шамонина</span><div class="talk-title">Потенциал метафор в психологической практике экзистенциально-аналитической работы</div></div>
+              <div class="talk"><span class="who">Марина Фадеева</span><div class="talk-title">Особенности психотерапии травматического опыта женщин, переживших сексуальное насилие<small>Клиническая работа на основе дипломного исследования, четыре случая из практики</small></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pause"><div class="time">14:00 – 15:00</div><div><div class="what">Обеденный перерыв</div></div></div>
+        <div class="row" id="langle">
+          <div class="keynote-slot">
+            <div class="keynote">
+              <svg class="sprig keynote-sprig" viewBox="0 0 200 260" aria-hidden="true">
+                <path d="M30 260 C 40 200, 60 150, 110 60" stroke="#8E7A55" stroke-width="2" fill="none" opacity="0.6"/>
+                <use href="#leaf" transform="translate(44 206) rotate(-150)" fill="#C98C6C" opacity="0.55"/>
+                <use href="#leaf" transform="translate(52 180) rotate(-20)" fill="#9AAA84" opacity="0.6"/>
+                <use href="#leaf" transform="translate(66 150) rotate(-160)" fill="#D9A07E" opacity="0.55"/>
+                <use href="#leaf" transform="translate(78 124) rotate(-30)" fill="#C98C6C" opacity="0.5"/>
+                <use href="#leaf" transform="translate(92 96) rotate(-145)" fill="#9AAA84" opacity="0.55"/>
+                <use href="#leaf" transform="translate(104 72) rotate(-45)" fill="#D9A07E" opacity="0.5"/>
+              </svg>
+              <div class="keynote-photo"><img alt="Альфрид Лэнгле" src="data:image/jpeg;base64,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"></div>
+              <span class="kicker">Лекция Альфрида Лэнгле · 15:00 – 16:30</span>
+              <h2>Доверять человеку</h2>
+              <p class="keynote-sub">Развитие экзистенциального анализа<br>в методологии и исследовании</p>
+            </div>
+            <div class="keynote-info">
+              <div>
+                <h3>О лекции</h3>
+                <blockquote>«Я хотел сделать логотерапию Виктора Франкла более практичной».</blockquote>
+                <div>
+                <p>Альфрид Лэнгле рассказывает, как из логотерапии вырос современный экзистенциальный анализ. В практической работе метафизический, основанный на вере фундамент логотерапии уступал место открытому феноменологическому взгляду, обращённому к самому человеку.</p>
+                <p>Главное достижение Франкла — человек в центре поиска смысла и формирования собственной жизни — дополнилось доверием: человек изначально обладает всем необходимым, чтобы без метафизической опоры находить смысл и целостно формировать свою жизнь. Это означает отход от картезианского дуализма и построения категорий и требует всерьёз относиться к субъекту.</p>
+                <p>Поэтому в центре подхода — феноменология: в фундаментальных мотивациях, персональном экзистенциальном анализе (ПЭА) и феноменологических исследованиях.</p>
+                </div>
+              </div>
+              <div>
+                <h3>Об Альфриде Лэнгле</h3>
+                <div class="quote-spacer"></div>
+                <div>
+                <p>Австрийский психотерапевт, доктор медицины и доктор философии. Ученик Виктора Франкла, почти десять лет работавший рядом с ним.</p>
+                <ul class="regalia">
+                  <li><b>Создатель современного экзистенциального анализа</b> — теории фундаментальных мотиваций и метода персонального экзистенциального анализа (ПЭА)</li>
+                  <li><b>Основатель Международного общества логотерапии и экзистенциального анализа</b> (GLE-International, Вена), по программам которого сегодня обучают во многих странах, в том числе в России</li>
+                  <li><b>Автор многочисленных книг и статей</b>, переведённых на многие языки</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pause"><div class="time">16:30 – 16:40</div><div><div class="what">Перерыв</div></div></div>
+
+        <div class="row">
+          <div class="time">16:40 – 18:50</div>
+          <div><div class="what">Мастер-классы онлайн</div><div class="note">Идут друг за другом</div></div>
+          <div class="mc-grid stack">
+            <div class="mc">
+              <span class="who"><span class="mc-time">16:40 – 17:40</span>Анастасия Климочкина, Мария Гаврилова и научная группа АЭАПП</span>
+              <h3>Исследование в экзистенциальном анализе</h3>
+              <p class="mc-sub">От замысла до результата</p>
+              <p>Открытая онлайн-встреча в три части: пример собственного исследования Марии Гавриловой, разбор «внутренней кухни» от научной группы АЭАПП и ответы Анастасии Климочкиной на типичные вопросы начинающих исследователей.</p>
+            </div>
+            <div class="mc">
+              <span class="who"><span class="mc-time">17:50 – 18:50</span>Дмитрий Бойко</span>
+              <h3>Между Person и алгоритмом</h3>
+              <p class="mc-sub">ИИ как второй контур профессиональной рефлексии в экзистенциально-аналитической практике</p>
+              <p>Живая демонстрация работы с большими языковыми моделями: транскрибация сессий, подготовка докладов, границы применения.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"><div class="time">18:50 – 19:00</div><div><div class="what">Закрытие фестиваля</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== РЕГИСТРАЦИЯ ===== -->
+  <section id="register" class="register" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-title"><h2>Участие</h2></div>
+
+      <div class="countdown">
+        <svg class="sprig countdown-sprig" viewBox="0 0 200 260" aria-hidden="true">
+          <path d="M30 260 C 40 200, 60 150, 110 60" stroke="#8E7A55" stroke-width="2" fill="none" opacity="0.6"/>
+          <use href="#leaf" transform="translate(44 206) rotate(-150)" fill="#C98C6C" opacity="0.55"/>
+          <use href="#leaf" transform="translate(52 180) rotate(-20)" fill="#9AAA84" opacity="0.6"/>
+          <use href="#leaf" transform="translate(66 150) rotate(-160)" fill="#D9A07E" opacity="0.55"/>
+          <use href="#leaf" transform="translate(78 124) rotate(-30)" fill="#C98C6C" opacity="0.5"/>
+          <use href="#leaf" transform="translate(92 96) rotate(-145)" fill="#9AAA84" opacity="0.55"/>
+          <use href="#leaf" transform="translate(104 72) rotate(-45)" fill="#D9A07E" opacity="0.5"/>
+        </svg>
+        <div class="countdown-title">Специальная цена для ранних пташек действует ещё</div>
+        <div class="countdown-clock" id="countdown">
+          <div><b data-unit="d">–</b><span>дней</span></div>
+          <div><b data-unit="h">–</b><span>часов</span></div>
+          <div><b data-unit="m">–</b><span>минут</span></div>
+        </div>
+        <div class="countdown-note">до <b>31 октября 2026 года</b> включительно — потом стоимость повышается</div>
+      </div>
+
+      <div class="plan">
+        <div class="plan-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#355C3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg></div>
+        <h3>Онлайн</h3>
+        <div class="plan-when">21 ноября 2026 (суббота)<br>10:00–19:00</div>
+        <ul class="includes">
+          <li>Доклады, лекция Альфрида Лэнгле, онлайн-мастер-классы</li>
+        </ul>
+        <div class="cost-label">Стоимость для гостей:</div>
+        <div class="cost"><span class="price-early">5 500 ₽</span><s class="price-regular">6 000 ₽</s></div>
+        <div class="cost-hint">ранняя цена до 31 октября</div>
+        <a class="btn" href="https://gle.aeapp.ru/21_11_26" target="_blank" rel="noopener">Зарегистрироваться</a>
+      </div>
+
+      <div class="members">
+        <h3>Стоимость для студентов и членов АЭАПП:</h3>
+        <ul>
+          <li><span class="m-early"><b>4&nbsp;500&nbsp;₽</b> <s>5&nbsp;000&nbsp;₽</s>&nbsp;— <span class="nowrap">ранняя цена до 31&nbsp;октября 2026&nbsp;г.</span></span><span class="m-late"><b>5&nbsp;000&nbsp;₽</b></span></li>
+        </ul>
+        <p>Для получения <b>промокода</b> напишите на <a href="mailto:aeapp.org@yandex.ru">aeapp.org@yandex.ru</a>, указав номер группы и фамилии ваших тренеров.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Ассоциация экзистенциально-аналитических психологов и психотерапевтов (АЭАПП)<br>
+    Вопросы — <a href="mailto:aeapp.org@yandex.ru">aeapp.org@yandex.ru</a><br>
+    Тел.: <a href="tel:+74993946125">+7 (499) 394-61-25</a>, <a href="tel:+79299423075">+7 (929) 942-30-75</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var nav = document.querySelector('.nav');
+    function sync() { document.documentElement.style.setProperty('--nav-h', nav.offsetHeight + 'px'); }
+    sync();
+    if (window.ResizeObserver) new ResizeObserver(sync).observe(nav);
+  })();
+
+  // Ранняя цена действует по 31 октября включительно (по Москве).
+  // До этого момента идёт отсчёт, после — страница показывает обычные цены.
+  (function () {
+    var deadline = new Date('2026-11-01T00:00:00+03:00').getTime();
+    var section = document.getElementById('register');
+    var cells = {};
+    document.querySelectorAll('#countdown [data-unit]').forEach(function (el) { cells[el.dataset.unit] = el; });
+
+    function plural(n, one, few, many) {
+      var n10 = n % 10, n100 = n % 100;
+      if (n10 === 1 && n100 !== 11) return one;
+      if (n10 >= 2 && n10 <= 4 && (n100 < 12 || n100 > 14)) return few;
+      return many;
+    }
+
+    function tick() {
+      var left = deadline - Date.now();
+      if (left <= 0) { section.classList.add('is-late'); return; }
+      var m = Math.floor(left / 60000);
+      var d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60), mm = m % 60;
+      cells.d.textContent = d; cells.d.nextElementSibling.textContent = plural(d, 'день', 'дня', 'дней');
+      cells.h.textContent = h; cells.h.nextElementSibling.textContent = plural(h, 'час', 'часа', 'часов');
+      cells.m.textContent = mm; cells.m.nextElementSibling.textContent = plural(mm, 'минута', 'минуты', 'минут');
+      setTimeout(tick, 30000);
+    }
+    tick();
+  })();
+</script>
+
+</body>
+</html>
